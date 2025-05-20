@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+    <script src="script.js" defer></script>
+</head>
+<body class="animated-bg">
+    <div class="bg-blob bg-blob1"></div>
+    <div class="bg-blob bg-blob2"></div>
+    <div class="bg-blob bg-blob3"></div>
+    <button class="theme-switch" onclick="toggleTheme()" aria-label="Toggle dark/light mode">🌙/☀️</button>
+    <svg class="decorative-svg decorative-svg-contact" viewBox="0 0 140 140" aria-hidden="true"><circle fill="#6a11cb" fill-opacity="0.10" cx="70" cy="70" r="70"/></svg>
+    <header class="main-header glass-card">
+        <div class="header-content">
+            <h1><span class="logo-icon" aria-label="logo">🧠</span> Brain Tumor Detection System</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact-section glass-card" id="contact">
+            <h2>Get in Touch</h2>
+            <form autocomplete="on" aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:support@braimer.com">support@braimer.com</a></p>
+                <p>Phone: <a href="tel:+18005551234">+1-800-555-1234</a></p>
+                <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=400&h=200&q=80" alt="Contact Us" class="contact-image">
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer glass-card">
+        <div class="footer-content">
+            <span class="footer-logo" aria-label="logo">🧠</span>
+            <span>&copy; 2025 Brain Tumor Detection System. All rights reserved.</span>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

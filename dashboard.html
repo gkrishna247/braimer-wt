@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Brain Tumor Detection Dashboard</title>
+</head>
+<body class="animated-bg">
+    <div class="bg-blob bg-blob1"></div>
+    <div class="bg-blob bg-blob2"></div>
+    <div class="bg-blob bg-blob3"></div>
+    <button class="theme-switch" onclick="toggleTheme()" aria-label="Toggle dark/light mode">🌙/☀️</button>
+    <svg class="decorative-svg decorative-svg-dashboard" viewBox="0 0 180 180" aria-hidden="true"><circle fill="#4CAF50" fill-opacity="0.10" cx="90" cy="90" r="90"/></svg>
+    <header class="main-header glass-card">
+        <div class="header-content">
+            <h1><span class="logo-icon" aria-label="logo">🧠</span> Brain Tumor Detection System</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container glass-card" id="dashboard">
+            <h1>Brain Tumor Detection</h1>
+            <div class="upload-area">
+                <label for="imageUpload" class="cta-button" tabindex="0">Choose Image</label>
+                <input type="file" id="imageUpload" accept="image/*" aria-label="Upload brain scan image">
+            </div>
+            <div class="preview-area">
+                <img id="previewImage" src="#" alt="Preview Image" style="display:none;">
+            </div>
+            <div class="results-area">
+                <h2>Results</h2>
+                <div id="results">
+                    <p id="loadingMessage" style="display: none;">Analyzing image...</p>
+                    <p id="detectionResult" style="display: none;"></p>
+                </div>
+            </div>
+            <div class="history">
+                <h2>Analysis History</h2>
+                <ul id="historyList" aria-live="polite">
+                    <!-- History items will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer glass-card">
+        <div class="footer-content">
+            <span class="footer-logo" aria-label="logo">🧠</span>
+            <span>&copy; 2025 Brain Tumor Detection System. All rights reserved.</span>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

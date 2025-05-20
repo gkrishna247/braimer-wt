@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="animated-bg">
+    <div class="bg-blob bg-blob1"></div>
+    <div class="bg-blob bg-blob2"></div>
+    <div class="bg-blob bg-blob3"></div>
+    <button class="theme-switch" onclick="toggleTheme()" aria-label="Toggle dark/light mode">🌙/☀️</button>
+    <svg class="decorative-svg decorative-svg-home" viewBox="0 0 200 200" aria-hidden="true"><circle fill="#4CAF50" fill-opacity="0.15" cx="100" cy="100" r="100"/></svg>
+    <header class="main-header glass-card">
+        <div class="header-content">
+            <h1><span class="logo-icon" aria-label="logo">🧠</span> Brain Tumor Detection System</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero-section glass-card">
+            <h1>Welcome to Brain Tumor Detection System!</h1>
+            <p>Experience the future of medical diagnostics with our advanced AI-powered detection system.</p>
+            <a href="login.html" class="cta-button">Get Started</a>
+        </div>
+        <section class="features" id="features">
+            <div class="feature glass-card">
+                <span class="feature-icon"><svg width="60" height="60" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#4CAF50" fill-opacity="0.2"/><path d="M20 30l7 7 13-13" stroke="#4CAF50" stroke-width="3" fill="none"/></svg></span>
+                <h2>Accurate Detection</h2>
+                <p>Our system provides highly accurate results to assist medical professionals.</p>
+            </div>
+            <div class="feature glass-card">
+                <span class="feature-icon"><svg width="60" height="60" viewBox="0 0 60 60" aria-hidden="true"><rect x="10" y="10" width="40" height="40" rx="10" fill="#007BFF" fill-opacity="0.2"/><path d="M20 30h20M30 20v20" stroke="#007BFF" stroke-width="3" fill="none"/></svg></span>
+                <h2>Fast Processing</h2>
+                <p>Get results in seconds, saving valuable time in critical situations.</p>
+            </div>
+            <div class="feature glass-card">
+                <span class="feature-icon"><svg width="60" height="60" viewBox="0 0 60 60" aria-hidden="true"><ellipse cx="30" cy="30" rx="28" ry="18" fill="#ff6f61" fill-opacity="0.15"/><path d="M20 40c0-10 20-10 20 0" stroke="#ff6f61" stroke-width="3" fill="none"/></svg></span>
+                <h2>Easy to Use</h2>
+                <p>Designed with simplicity in mind for seamless user experience.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer glass-card">
+        <div class="footer-content">
+            <span class="footer-logo" aria-label="logo">🧠</span>
+            <span>&copy; 2025 Brain Tumor Detection System. All rights reserved.</span>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
